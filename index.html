@@ -107,6 +107,51 @@
         transform: scale(1.1);
         /* Se hace un 10% más grande */
     }
+
+    /* Estilos del Acordeón de Preguntas Frecuentes */
+    details {
+        background-color: white;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+
+    details[open] {
+        border-left: 4px solid #1a1a1a;
+        /* Detalle elegante al abrir */
+    }
+
+    summary {
+        font-weight: bold;
+        font-size: 1.1em;
+        cursor: pointer;
+        list-style: none;
+        /* Quita la flecha fea por defecto en algunos navegadores */
+        outline: none;
+    }
+
+    /* Agregamos nuestra propia flecha personalizada con CSS */
+    summary::after {
+        content: '+';
+        float: right;
+        font-size: 1.5em;
+        color: #6c757d;
+        transition: transform 0.3s ease;
+    }
+
+    details[open] summary::after {
+        content: '−';
+        color: #1a1a1a;
+    }
+
+    details p {
+        margin-top: 15px;
+        color: #555;
+        line-height: 1.6;
+    }
 </style>
 
 <head>
@@ -173,6 +218,29 @@
             <!-- Botón de WhatsApp temporal -->
             <a href="https://wa.me/524791361794?text=Hola,%20me%20interesa%20cotizar%20el%20Grupo%20Versatil"><i
                     class="fab fa-whatsapp" style="margin-right: 8px; font-size: 1.2em;"></i>Cotizar Grupo Versátil</a>
+        </section>
+        <hr>
+
+        <section id="faq" style="text-align: left;">
+            <h2 style="text-align: center;">Preguntas Frecuentes</h2>
+
+            <details>
+                <summary>¿Con cuánto tiempo de anticipación debo separar mi fecha?</summary>
+                <p>Recomendamos apartar tu fecha con al menos 1 o 2 meses de anticipación, especialmente para bodas o
+                    eventos en fines de semana muy concurridos.</p>
+            </details>
+
+            <details>
+                <summary>¿Viajan fuera de la ciudad?</summary>
+                <p>Sí, cubrimos eventos en zonas aledañas. Mándanos un WhatsApp con la ubicación exacta para incluir los
+                    viáticos en tu cotización.</p>
+            </details>
+
+            <details>
+                <summary>¿El precio incluye equipo de sonido?</summary>
+                <p>Totalmente. Nosotros llevamos equipo de audio profesional adecuado para el tamaño de tu evento y la
+                    cantidad de invitados. Tú no te preocupas por nada técnico.</p>
+            </details>
         </section>
     </main>
 
