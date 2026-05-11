@@ -152,6 +152,32 @@
         color: #555;
         line-height: 1.6;
     }
+
+    /* Estilos de la Galería con CSS Grid */
+    .grid-galeria {
+        display: grid;
+        /* Esta línea es magia pura: crea columnas automáticas que no bajan de 250px */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        /* Espacio perfecto entre las fotos */
+        margin-top: 30px;
+    }
+
+    .grid-galeria img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        /* Evita que las fotos se aplasten o deformen */
+        border-radius: 8px;
+        /* Bordes suaves minimalistas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .grid-galeria img:hover {
+        transform: scale(1.03);
+        /* Efecto zoom elegante al pasar el mouse */
+    }
 </style>
 
 <head>
@@ -219,6 +245,23 @@
             <a href="https://wa.me/524791361794?text=Hola,%20me%20interesa%20cotizar%20el%20Grupo%20Versatil"><i
                     class="fab fa-whatsapp" style="margin-right: 8px; font-size: 1.2em;"></i>Cotizar Grupo Versátil</a>
         </section>
+
+        <hr>
+
+        <section id="galeria">
+            <h2>Nuestros Eventos</h2>
+            <p>Un vistazo a la energía y elegancia que llevamos a cada celebración.</p>
+
+            <div class="grid-galeria">
+                <img src="https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=500&q=80" alt="Evento musical">
+                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=500&q=80" alt="Fiesta y baile">
+                <img src="https://images.unsplash.com/photo-1470229722913-7c092db65f5e?w=500&q=80"
+                    alt="Coro en iglesia">
+                <img src="https://images.unsplash.com/photo-1533174000287-45e456621aa8?w=500&q=80"
+                    alt="Grupo versátil en vivo">
+            </div>
+        </section>
+
         <hr>
 
         <section id="faq" style="text-align: left;">
