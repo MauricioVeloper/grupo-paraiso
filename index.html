@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <style>
+    /* Activa el deslizamiento suave en toda la página */
+    html {
+        scroll-behavior: smooth;
+    }
+
     /* Reseteamos márgenes y usamos una fuente limpia */
     body {
         font-family: system-ui, -apple-system, sans-serif;
@@ -78,10 +83,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Musical Paraíso</title>
     <meta property="og:title" content="Grupo Musical Paraíso">
-    <meta property="og:description" content="La mejor música para tus eventos. Coro para ceremonias religiosas y Grupo Versátil para tu fiesta.">
+    <meta property="og:description"
+        content="La mejor música para tus eventos. Coro para ceremonias religiosas y Grupo Versátil para tu fiesta.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=800&q=80">
     <meta property="og:url" content="https://mauricioveloper.github.io/grupo-paraiso/">
     <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -90,6 +97,14 @@
     <header>
         <h1>Grupo Musical Paraíso</h1>
         <p>Música excepcional para cada momento de tu vida</p>
+        <nav style="margin-top: 20px;">
+            <a href="#coro"
+                style="background-color: transparent; border: 1px solid white; padding: 8px 20px; font-size: 0.9em; margin: 0 5px;">Iglesia
+                y Ceremonias</a>
+            <a href="#grupo-versatil"
+                style="background-color: transparent; border: 1px solid white; padding: 8px 20px; font-size: 0.9em; margin: 0 5px;">Fiesta
+                y Baile</a>
+        </nav>
     </header>
 
     <main>
@@ -105,7 +120,7 @@
             </div>
 
             <!-- Botón de WhatsApp temporal -->
-            <a href="https://wa.me/524776070846?text=Hola,%20me%20interesa%20cotizar%20el%20Coro">Cotizar Coro por WhatsApp</a>
+            <a href="https://wa.me/524791361794?text=Hola,%20me%20interesa%20cotizar%20el%20Coro"><i class="fab fa-whatsapp" style="margin-right: 8px; font-size: 1.2em;"></i>Cotizar Coro</a>
         </section>
 
         <hr>
@@ -122,7 +137,7 @@
             </div>
 
             <!-- Botón de WhatsApp temporal -->
-            <a href="https://wa.me/524776070846?text=Hola,%20me%20interesa%20cotizar%20el%20Grupo%20Versátil">Cotizar Grupo Versátil</a>
+            <a href="https://wa.me/524791361794?text=Hola,%20me%20interesa%20cotizar%20el%20Grupo%20Versatil"><i class="fab fa-whatsapp" style="margin-right: 8px; font-size: 1.2em;"></i>Cotizar Grupo Versátil</a>
         </section>
     </main>
 
