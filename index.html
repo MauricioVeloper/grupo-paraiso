@@ -178,6 +178,47 @@
         transform: scale(1.03);
         /* Efecto zoom elegante al pasar el mouse */
     }
+
+    /* Estilos del Footer y Redes Sociales */
+    footer h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    footer p {
+        color: #adb5bd;
+        margin: 5px 0;
+    }
+
+    .redes-sociales {
+        margin: 20px 0;
+    }
+
+    /* Sobrescribimos el botón verde solo para las redes sociales */
+    a.social-link {
+        background-color: transparent;
+        color: white;
+        padding: 10px;
+        font-size: 1.5em;
+        /* Hace los iconos más grandes */
+        margin: 0 10px;
+        border-radius: 50%;
+    }
+
+    a.social-link:hover {
+        color: #25D366;
+        /* Se iluminan al pasar el mouse */
+        background-color: transparent;
+        transform: scale(1.2);
+        /* Pequeño salto animado */
+    }
+
+    .copyright,
+    .desarrollador {
+        color: #6c757d;
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
 </style>
 
 <head>
@@ -289,7 +330,18 @@
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <p>Atención directa y personalizada.</p>
+        <h3>Grupo Musical Paraíso</h3>
+        <p>Música excepcional para cada momento de tu vida.</p>
+
+        <div class="redes-sociales">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Grupo Musical Paraíso. Todos los derechos reservados.</p>
+        <p class="desarrollador">Desarrollado por MauricioVeloper</p>
     </footer>
 
 </body>
