@@ -1,3 +1,21 @@
+/* Personalización de la barra de desplazamiento (Scrollbar) */
+::-webkit-scrollbar {
+    width: 8px; /* Más delgada y elegante */
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa; /* Mismo gris claro de tu fondo */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a1a1a; /* Mismo negro de tu header */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #25D366; /* Un guiño al verde de WhatsApp al pasar el mouse */
+}
+
 /* =========================================
    ESTILOS GENERALES
    ========================================= */
@@ -15,8 +33,8 @@ body {
 header {
     background-color: #1a1a1a;
     color: white;
-    padding: 40px 20px;
-}
+    padding: 40px 20px 1px 20px;
+}  
 
 header h1 { margin: 0 0 10px 0; }
 
@@ -36,7 +54,14 @@ hr {
 /* =========================================
    MENÚ DE NAVEGACIÓN
    ========================================= */
-nav { margin-top: 20px; }
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #1a1a1a; /* Fondo oscuro para que no se revuelva con el texto al bajar */
+    padding: 15px 0;
+    z-index: 1000; /* Asegura que pase por encima de los videos e imágenes */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Sombrita para separarlo del contenido */
+}
 
 nav a {
     background-color: transparent;
